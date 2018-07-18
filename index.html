@@ -135,9 +135,103 @@
             <h2>Contact</h2>
             <hr>
             <p class="lead">
-              I'll get around to putting in the officer emails and contact form later :^)
+              
             </p>
           </div>
+
+    <!--Section: Contact v.2-->
+    <section class="section">
+
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions about cooperative living? Shoot us an email and we'll get back to you soon.</p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="validateForm()">Send</a>
+                </div>
+                <div class="status" id="status"></div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><i class="fa fa-map-marker fa-2x"></i>
+                        <p>Ithaca, NY 14850</p>
+                    </li>
+
+                    <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                        <p>(786)359-6180</p>
+                    </li>
+
+                    <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                        <p>yy348@cornell.edu</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+        </div>
+
+</section>
+<!--Section: Contact v.2-->
         </div>
       </div>
     </section>
@@ -161,6 +255,67 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+
+    <script>
+      function validateForm() {
+          var name =  document.getElementById('name').value;
+          if (name == "") {
+              document.getElementById('status').innerHTML = "Name cannot be empty";
+              return false;
+          }
+          var email =  document.getElementById('email').value;
+          if (email == "") {
+              document.getElementById('status').innerHTML = "Email cannot be empty";
+              return false;
+          } else {
+              var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+              if(!re.test(email)){
+                  document.getElementById('status').innerHTML = "Email format invalid";
+                  return false;
+              }
+          }
+          var subject =  document.getElementById('subject').value;
+          if (subject == "") {
+              document.getElementById('status').innerHTML = "Subject cannot be empty";
+              return false;
+          }
+          var message =  document.getElementById('message').value;
+          if (message == "") {
+              document.getElementById('status').innerHTML = "Message cannot be empty";
+              return false;
+          }
+
+          document.getElementById('status').innerHTML = "Sending...";
+          formData = {
+              'name'     : $('input[name=name]').val(),
+              'email'    : $('input[name=email]').val(),
+              'subject'  : $('input[name=subject]').val(),
+              'message'  : $('textarea[name=message]').val()
+          };
+
+
+          $.ajax({
+          url : "mail.php",
+          type: "POST",
+          data : formData,
+          success: function(data, textStatus, jqXHR)
+          {
+
+              $('#status').text(data.message);
+              if (data.code) //If mail was sent successfully, reset the form.
+              $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+          },
+          error: function (jqXHR, textStatus, errorThrown)
+          {
+              $('#status').text(jqXHR);
+          }
+          });
+
+
+      }
+
+  
+</script>
 
   </body>
 

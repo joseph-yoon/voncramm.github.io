@@ -19,6 +19,22 @@ header {
   }
 }
 
+@media (max-width: 991px) {
+  header {
+    background-size: 991px auto !important;
+  }
+
+  header div h1 {
+    top: 0px !important; 
+    position: relative !important;
+  }
+
+  header div p {
+    top: 0px !important; 
+    position: relative !important;
+  }
+}
+
 section {
   padding: 80px 0;
 }

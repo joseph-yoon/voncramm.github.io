@@ -7,21 +7,22 @@
 header {
   padding: 154px 0 100px;
   background-image: url("housefront.jpg") !important;
-  background-position: 0px -150px;
+  background-position: 0px -85px;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   header {
     padding: 300px 0 100px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 849px) {
   header {
-    background-size: 767px auto !important;
+    background-size: cover !important;
+    background-position: 0px 0px !important;
   }
 
   header div h1 {

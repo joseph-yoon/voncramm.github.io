@@ -13,15 +13,15 @@ header {
   z-index: -1;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   header {
     padding: 300px 0 100px;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   header {
-    background-size: 991px auto !important;
+    background-size: 767px auto !important;
   }
 
   header div h1 {

@@ -40,6 +40,10 @@ section {
   padding: 80px 0;
 }
 
-#welcome {
+a:link {
+  color: red;
+}
 
+a:visited {
+  color:green;
 }

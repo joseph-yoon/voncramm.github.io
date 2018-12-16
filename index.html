@@ -9,6 +9,9 @@
     <meta name="author" content="Yuji Yang">
 
     <title>Von Cramm Cooperative Hall</title>
+    <!--scripts-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +24,7 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #D86C70">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #800000">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Von Cramm</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,8 +63,21 @@
           <div class="col-lg-8 mx-auto">
             <h2>Welcome to Von Cramm</h2>
             <hr>
-            <img src = "css/cramm2018.jpg" style = "width:100%; height:auto">
-            <p class="lead"><b>With 34 members</b>, Von Cramm Cooperative (the "Cramm") is the largest house owned by Cornell University. We are a diverse group of graduate and undergraduate students with a wide range of backgrounds and interests. <b>Our goal is to be a community that supports and enriches its members through thoughtful interaction, responsibility and generosity.</b> At most times of the day, there are people around to engage in conversation or perhaps a game of pool. Often in winter, people are drawn to the fireplace in the living room, and when warm weather arrives they hang out in the back yard.</p>
+
+          <div class = "slideshow">
+            <div class = "slideshowholder">
+              <img id ="slideshowimg" src = "images/cramm2018.jpg" style = "width:100%; height:auto" alt = "cramm2018"/>
+            </div>
+            <div class = "ssbuttonholder">
+              <div id = "ssnext" class = "slideshownext">
+                <button> Next >>> </button>
+              </div>
+              <div id = "ssback" class = "slideshowback">
+                <button> <<< Back </button>
+            </div>
+          </div>
+
+          <p class="lead"><b>With 34 members</b>, Von Cramm Cooperative (the "Cramm") is the largest house owned by Cornell University. We are a diverse group of graduate and undergraduate students with a wide range of backgrounds and interests. <b>Our goal is to be a community that supports and enriches its members through thoughtful interaction, responsibility and generosity.</b> At most times of the day, there are people around to engage in conversation or perhaps a game of pool. Often in winter, people are drawn to the fireplace in the living room, and when warm weather arrives they hang out in the back yard.</p>
             <ul>
               <li>Rent includes <b>room</b>, <b>all utilities</b>, <b>full meal plan</b> and <b>laundry</b>.</li>
               <li><b>Crammie-made house dinners</b> happen six nights a week. Food for the remaining week is always available.</li>
@@ -80,14 +96,16 @@
             <h2>The Principles of Cooperative Living</h2>
             <hr>
             <p class="lead">
-            <h3>Definition</h3>A co-operative is an autonomous association of persons united voluntarily to meet their common economic, social, and cultural needs and aspirations through a jointly-owned and democratically- controlled enterprise.<br/><br /></p>
+            <h3>Definition</h3>A co-operative is an autonomous association of persons united voluntarily to meet their common economic, social, and cultural needs and aspirations through a jointly-owned and democratically- controlled enterprise.<br/><br />
 
             <h3>Values</h3>Co-operatives are based on the values of self-help, self- responsibility, democracy, equality, equity, and solidarity. In the tradition of their founders, co-operative members believe in the ethical values of honesty, openness, social responsibility, and caring for others.<br/><br />
 
-            <h3>Principles</h3> The co-operative principles are guidelines by which co-operatives put their values into practice.<br/><br />
+            <h3>Principles</h3> The co-operative principles are guidelines by which co-operatives put their values into practice.
+          </p>
+            <br/><br />
 
-          
-        
+
+
           <div id="accordion">
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -219,8 +237,7 @@
               <li>Helping prepare one house dinner at Von Cramm</li></ul>
 
               <br/><br/>
-              <h4><a href="https://github.com/Von-Cramm/VC-Constitution/wiki">Von Cramm Constitution</a><h4>
-            </p>
+              <h4><a href="https://github.com/Von-Cramm/VC-Constitution/wiki">Von Cramm Constitution</a></h4>
           </div>
         </div>
       </div>
@@ -233,7 +250,7 @@
             <h2>Contact</h2>
             <hr>
             <p class="lead">
-              
+
             </p>
           </div>
     <div class="col-lg-8 mx-auto">
@@ -314,22 +331,22 @@
             <div class="col-md-3 text-center">
                 <ul class="list-unstyled mb-0">
                     <li><i class="fa fa-map-marker fa-2x"></i>
-                        
+
                     </li>
 
                     <li><i class="fa fa-phone mt-4 fa-2x"></i>
-                        
+
                     </li>
 
                     <li><i class="fa fa-envelope mt-4 fa-2x"></i>
-                        
+
                     </li>
                 </ul>
             </div>
             <!--Grid column-->
 
         </div>
-          <img class = "img-fluid" src="css/pbRaccoonTransparent.png" style="width:300px; height: auto; vertical-align: baseline; display:block; margin:0 auto">
+          <img class = "img-fluid" src="images/pbRaccoonTransparent.png" alt = "racoon" style="width:300px; height: auto; vertical-align: baseline; display:block; margin:0 auto">
 
 
 
@@ -343,7 +360,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-5" style="background-color: #D86C70">
+    <footer class="py-5" style="background-color: #800000">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Von Cramm 2018</p>
         <p class="m-0 text-center text-white">623 University Ave</p>
@@ -416,11 +433,9 @@
               $('#status').text(jqXHR);
           }
           });
-
-
       }
 
-  
+
 </script>
 
   </body>

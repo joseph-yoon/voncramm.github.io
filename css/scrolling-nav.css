@@ -26,12 +26,12 @@ header {
   }
 
   header div h1 {
-    top: 0px !important; 
+    top: 0px !important;
     position: relative !important;
   }
 
   header div p {
-    top: 0px !important; 
+    top: 0px !important;
     position: relative !important;
   }
 }
@@ -46,4 +46,35 @@ a:link {
 
 a:visited {
   color:green;
+}
+
+.nav-item {
+  margin-right: 15px;
+}
+
+section {
+  padding-top: 20px;
+}
+
+.lead {
+  margin-top: 20px;
+}
+
+/* slideshow */
+
+.slideshowholder img {
+  border: 15px black solid;
+}
+.ssbuttonholder {
+  position: relative;
+}
+.slideshownext {
+  text-align: center;
+  padding-bottom: 10px;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+.slideshowback {
+  cursor: pointer;
 }

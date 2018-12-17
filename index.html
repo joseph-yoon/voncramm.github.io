@@ -12,6 +12,7 @@
     <!--scripts-->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -266,7 +267,7 @@
 
             <!--Grid column-->
             <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="https://formspree.io/Voncrammcoop@cornell.edu" method="POST">
+                <form id="contact-form" name="contact-form" action="https://formspree.io/Voncrammcoop@cornell.edu" method="POST" novalidate>
 
                     <!--Grid row-->
                     <div class="row">
@@ -274,8 +275,11 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Name">
-                                <label for="name" class=""></label>
+                              <label for="name" class=""></label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Name" minlength = "2" required/>
+                                <span class="errorContainer hidden" id="nameError">
+                                  A valid name is required.
+                                </span>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -283,8 +287,11 @@
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control" placeholder="Your Email">
                                 <label for="email" class=""></label>
+                                <input type="text" id="email" name="email" class="form-control" placeholder="Your Email" required/>
+                                <span class="errorContainer hidden" id="emailError">
+                                  A valid email is required.
+                                </span>
                             </div>
                         </div>
                         <!--Grid column-->
@@ -296,8 +303,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject">
                                 <label for="subject" class=""></label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" minlength = "1" required/>
+                                <span class="errorContainer hidden" id="subjectError">
+                                  A subject is required.
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -310,8 +320,11 @@
                         <div class="col-md-12">
 
                             <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message"></textarea>
-                                <label for="message"></label>
+                              <label for="message"></label>
+                              <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Your Message" minlength = "1" required/></textarea>
+                              <span class="errorContainer hidden" id="messageError">
+                                  A message is required. <br/> <br/>
+                              </span>
                             </div>
 
                         </div>

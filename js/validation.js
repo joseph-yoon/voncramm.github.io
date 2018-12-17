@@ -3,7 +3,11 @@ $(document).ready(function () {
     var formValid = true;
 
     var validName = $("#name").prop("validity").valid;
+<<<<<<< HEAD
     if(validName) { 
+=======
+    if(validName) {
+>>>>>>> b76467d180b7fd64ed7f6c5b52446b4a79c0eb58
       $("#nameError").addClass("hidden");
     } else {
       $("#nameError").removeClass("hidden");

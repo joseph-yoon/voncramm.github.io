@@ -84,3 +84,13 @@ section {
 .slideshowback {
   cursor: pointer;
 }
+
+/* form validation */
+
+.hidden {
+  display: none !important;
+}
+
+.errorContainer {
+  color: #800000;
+}

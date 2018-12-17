@@ -5,7 +5,7 @@
  */
 
 header {
-  padding: 154px 0 100px;
+  padding: 154px 0 80px;
   background-image: url("housefront.jpg") !important;
   background-position: 0px -85px;
   background-repeat: no-repeat;
@@ -58,6 +58,12 @@ section {
 
 .lead {
   margin-top: 20px;
+}
+#principles, #contact{
+  background-color: rgb(239, 254, 254);
+}
+#welcome, #join {
+  background-color: rgb(244, 239, 243);
 }
 
 /* slideshow */

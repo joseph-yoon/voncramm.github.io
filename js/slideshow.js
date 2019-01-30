@@ -3,7 +3,8 @@ $(document).ready(function() {
     "images/voncramm1.jpg", 
     "images/voncramm2.jpg",
     "images/voncramm3.jpg",
-    "images/voncramm4.jpg"
+    "images/voncramm4.jpg", 
+    "images/Voncramm5.jpg
   ];
   var currindex = 0;
 

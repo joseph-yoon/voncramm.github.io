@@ -1,7 +1,6 @@
 $(document).ready(function() {
   var images = [
-    "images/voncramm1.jpg",
-    "images/cramm2018.jpg",
+    "images/voncramm1.jpg", 
     "images/voncramm2.jpg",
     "images/voncramm3.jpg",
     "images/voncramm4.jpg"

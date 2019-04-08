@@ -34,63 +34,73 @@ header {
     top: 0px !important;
     position: relative !important;
   }
-}
 
-section {
-  padding: 80px 0;
-}
+  section {
+    padding: 80px 0;
+  }
 
-a:link {
-  color: red;
-}
+  a:link {
+    color: red;
+  }
 
-a:visited {
-  color:green;
-}
+  a:visited {
+    color:green;
+  }
 
-.nav-item {
-  margin-right: 15px;
-}
+  .nav-item {
+    margin-right: 15px;
+  }
 
-section {
-  padding-top: 20px;
-}
+  section {
+    padding-top: 20px;
+  }
 
-.lead {
-  margin-top: 20px;
-}
-#principles, #contact{
-  background-color: rgb(239, 254, 254);
-}
-#welcome, #join {
-  background-color: rgb(244, 239, 243);
-}
+  .lead {
+    margin-top: 20px;
+  }
+  #principles, #contact{
+    background-color: rgb(239, 254, 254);
+  }
+  #welcome, #join {
+    background-color: rgb(244, 239, 243);
+  }
 
-/* slideshow */
+  /* accordian */
+  .mb-0 h5 {
+    font-size: 16px;
+  }
 
-.slideshowholder img {
-  border: 15px black solid;
-}
-.ssbuttonholder {
-  position: relative;
-}
-.slideshownext {
-  text-align: center;
-  padding-bottom: 10px;
-  position: absolute;
-  right: 0px;
-  cursor: pointer;
-}
-.slideshowback {
-  cursor: pointer;
-}
+  /* slideshow */
 
-/* form validation */
+  .slideshowholder img {
+    border: 15px black solid;
+  }
+  .ssbuttonholder {
+    position: relative;
+  }
+  .slideshownext {
+    text-align: center;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+  }
+  .slideshowback {
+    cursor: pointer;
+  }
 
-.hidden {
-  display: none !important;
-}
+  /* Save Plate */
+  iframe {
+    width: 430px;
+  }
 
-.errorContainer {
-  color: #800000;
+  /* form validation */
+
+  .hidden {
+    display: none !important;
+  }
+
+  .errorContainer {
+    color: #800000;
+  }
 }

@@ -64,14 +64,18 @@ header {
   #welcome, #join {
     background-color: rgb(244, 239, 243);
   }
+  
+  #header-container {
+    background-color: black;
+    opacity: 0.8;
+  }
 
   /* accordian */
   .mb-0 h5 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   /* slideshow */
-
   .slideshowholder img {
     border: 15px black solid;
   }
@@ -91,7 +95,7 @@ header {
 
   /* Save Plate */
   iframe {
-    width: 430px;
+    width: 400px;
   }
 
   /* form validation */

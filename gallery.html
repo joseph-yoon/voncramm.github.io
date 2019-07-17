@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Gallery</title>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <script type="text/javascript" src="js/validation.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/gallery.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #800000">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Von Cramm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Welcome</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Principles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Join</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Save Plate</a>
+            </li>
+            <li class ="nav-item">
+                <a class = "nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="gallery-title">
+        <div class="container text-center" id="header-container">
+            <h1>Gallery</h1>
+            <h3>Von Cramm is a great place to make new friends!</h3>
+      </div>
+    </header>
+
+    <section id = "gallery">  
+        <div class = "column">
+            <img src = "images/voncramm6.jpg" id="img1">
+            <img src = "images/voncramm7.jpg" id="img2">
+            <img src = "images/voncramm8.jpg" id="img3">
+            <img src = "images/voncramm9.jpg" id="img4">
+        </div>
+        <div class = "column">
+            <img src = "images/voncramm10.jpg" id="img5">
+            <img src = "images/voncramm11.jpg" id="img6">
+            <img src = "images/voncramm12.jpeg" id="img7">
+            <img src = "images/voncramm13.jpg" id="img8">
+        </div>
+        <div class = "column">
+            <img src = "images/voncramm14.jpg" id="img9">
+            <img src = "images/voncramm15.jpg" id="img10">
+            <img src = "images/voncramm16.jpg" id="img11">
+            <img src = "images/voncramm17.jpg" id="img12">
+        </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="expand_img">
+      </div>
+
+  </section>
+
+
+
+
+<!-- Adapted From https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img -->
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  height: 95%;
+}
+
+/* Add Animation */
+.modal-content {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 9%;
+  right: 19%;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
+
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the image and insert it inside the modal
+  var img = document.getElementById("img2");
+  var modalImg = document.getElementById("expand_img");
+
+  $("#img1").click(function(){
+    img = document.getElementById("img1");
+    var modalImg = document.getElementById("expand_img");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img2").click(function(){
+    img = document.getElementById("img2");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img3").click(function(){
+    img = document.getElementById("img3");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img4").click(function(){
+    img = document.getElementById("img4");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img5").click(function(){
+    img = document.getElementById("img5");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img6").click(function(){
+    img = document.getElementById("img6");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img7").click(function(){
+    img = document.getElementById("img7");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img8").click(function(){
+    img = document.getElementById("img8");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img9").click(function(){
+    img = document.getElementById("img9");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img10").click(function(){
+    img = document.getElementById("img10");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img11").click(function(){
+    img = document.getElementById("img11");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+
+  $("#img12").click(function(){
+    img = document.getElementById("img12");
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  });
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() { 
+    modal.style.display = "none";
+  }
+</script>
+    </body>
+    </html>

@@ -46,6 +46,7 @@ header {
     flex: 100%;
     max-width: 100%;
   }
+}
 
 @media (min-width: 850px) {
   header {

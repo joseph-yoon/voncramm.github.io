@@ -43,6 +43,19 @@ iframe {
   cursor: pointer;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.errorContainer {
+  color: #800000;
+}
+
+section {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
 @media (min-width: 850px) {
   header {
     padding: 300px 0 100px;
@@ -126,14 +139,5 @@ iframe {
   iframe {
     width: 400px;
   }
-
   /* form validation */
-
-  .hidden {
-    display: none !important;
-  }
-
-  .errorContainer {
-    color: #800000;
-  }
 }

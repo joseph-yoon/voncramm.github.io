@@ -13,11 +13,12 @@ header {
   z-index: -1;
 }
 
-#principles, #contact{
+#principles, #feedback-form {
   background-color: rgb(239, 254, 254);
 }
-#welcome, #join {
-  background-color: rgb(244, 239, 243);
+
+#welcome, #join, #contact {
+  background-color: rgb(255, 247, 253);
 }
 
 iframe {

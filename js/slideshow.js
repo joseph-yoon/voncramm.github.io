@@ -2,7 +2,7 @@ $(document).ready(function() {
   var images = [
     "images/vc3.jpg", 
     "images/vc1.jpg",
-    "images/vc2.jpg",
+    "images/vc2.JPG",
     "images/vc4.jpg", 
     "images/vc5.jpg"
   ];

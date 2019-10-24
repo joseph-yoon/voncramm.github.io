@@ -1,10 +1,10 @@
 $(document).ready(function() {
   var images = [
-    "images/voncramm1.jpg", 
-    "images/voncramm2.jpg",
-    "images/voncramm3.jpg",
-    "images/voncramm4.jpg", 
-    "images/Voncramm5.jpg"
+    "images/vc3.jpg", 
+    "images/vc1.jpg",
+    "images/vc2.jpg",
+    "images/vc4.jpg", 
+    "images/vc5.jpg"
   ];
   var currindex = 0;
 

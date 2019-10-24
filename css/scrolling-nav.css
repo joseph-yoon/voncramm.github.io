@@ -13,6 +13,10 @@ header {
   z-index: -1;
 }
 
+img {
+  image-orientation: from-image;
+}
+
 #principles, #feedback-form {
   background-color: rgb(239, 254, 254);
 }
@@ -116,6 +120,7 @@ section {
   /* slideshow */
   .slideshowholder img {
     border: 15px black solid;
+    width: 100%;
   }
   .ssbuttonholder {
     position: relative;

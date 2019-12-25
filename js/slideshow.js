@@ -1,8 +1,8 @@
 $(document).ready(function() {
   var images = [
     "images/voncramm31.jpg", 
+    "images/vc2.jpg",
     "images/vc1.jpg",
-    "images/vc2.JPG",
     "images/vc4.jpg", 
     "images/vc5.jpg"
   ];
@@ -35,6 +35,6 @@ function carousel() {
       currindex++;
     }
     $("#slideshowimg").attr("src", images[currindex]);
-    setTimeout(carousel, 5000);
+    setTimeout(carousel, 4000);
 }
 });

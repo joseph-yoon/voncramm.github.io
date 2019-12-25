@@ -18,12 +18,25 @@ img {
   image-orientation: from-image;
 }
 
-#principles, #feedback-form {
+#principles {
   background-color: rgb(239, 254, 254);
 }
 
-#welcome, #join, #contact {
+#welcome {
   background-color: rgb(255, 247, 253);
+}
+
+#saveplate {
+  background-color: rgb(240, 255, 255);
+}
+
+#contact {
+  background-color: rgb(244, 255, 242);
+}
+
+#body-container {
+  min-height: 100%;
+  background-color: rgb(240, 255, 255);
 }
 
 iframe {
@@ -57,14 +70,15 @@ iframe {
   color: #800000;
 }
 
-section {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
-
 #header-container {
+  padding: 20px 0 20px 0;
   background-color: black;
   opacity: 0.8;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 850px) {
@@ -89,10 +103,6 @@ section {
     position: relative !important;
   }
 
-  section {
-    padding: 80px 0;
-  }
-
   a:link {
     color: red;
   }
@@ -102,11 +112,12 @@ section {
   }
 
   .nav-item {
-    margin-right: 15px;
+    margin-right: 20px;
   }
 
   section {
-    padding-top: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   .lead {
@@ -151,4 +162,7 @@ section {
   }
   /* form validation */
 }
+
+
+
 

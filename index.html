@@ -2,24 +2,23 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="Yuji Yang">
+    <meta name="author" content="Yuji Yang, Emily Chen">
 
     <title>Von Cramm Cooperative Hall</title>
     <!--scripts-->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/slideshow.js"></script>
-    <script type="text/javascript" src="js/validation.js"></script>
+    <script type="text/javascript" src="js/stop-anchor.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
-
   </head>
 
   <body id="page-top">
@@ -27,32 +26,29 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color: #800000">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Von Cramm</a>
+        <a class="navbar-brand js-scroll-trigger" href="index.html">Von Cramm</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#welcome">Welcome</a>
+              <a class="nav-link js-scroll-trigger anchor" href="#welcome" onclick="return false;">Welcome</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#principles">Principles</a>
+              <a class="nav-link js-scroll-trigger anchor" href="join.html">Join</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#join">Join</a>
+              <a class="nav-link js-scroll-trigger anchor" href="#saveplate" onclick="return false;">Save Plate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#saveplate">Save Plate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#feedback-form">Officer Feedback</a>
+              <a class="nav-link js-scroll-trigger anchor" href="officer-feedback.html">Officer Feedback</a>
             </li>
             <li class ="nav-item">
-              <a class = "nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+              <a class = "nav-link js-scroll-trigger anchor" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#contact anchor" onclick="return false;">Contact</a>
             </li>
           </ul>
         </div>
@@ -76,7 +72,7 @@
 
           <div class = "slideshow">
             <div class = "slideshowholder">
-              <img id ="slideshowimg" src="images/vc1.jpg" style = "width:100%; max-height:470px" alt = "cramm2019"/>
+              <img id ="slideshowimg" src="images/vc2.jpg" style = "width:100%; max-height:470px" alt = "cramm2019"/>
             </div>
             <div class = "ssbuttonholder">
               <div id = "ssnext" class = "slideshownext">
@@ -86,6 +82,7 @@
                 <button> <<< Back </button>
             </div>
           </div>
+          <br/>
 
           <p class="lead"><b>With 34 members</b>, Von Cramm Cooperative (the "Cramm") is the largest house owned by Cornell University. We are a diverse group of graduate and undergraduate students with a wide range of backgrounds and interests. <b>Our goal is to be a community that supports and enriches its members through thoughtful interaction, responsibility and generosity.</b> At most times of the day, there are people around to engage in conversation or perhaps a game of pool. Often in winter, people are drawn to the fireplace in the living room, and when warm weather arrives they hang out in the back yard.</p>
             <ul>
@@ -99,213 +96,7 @@
       </div>
     </section>
 
-    <section id="principles">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>The Principles of Cooperative Living</h2>
-            <hr>
-            <p class="lead">
-            <h3>Definition</h3>A co-operative is an autonomous association of persons united voluntarily to meet their common economic, social, and cultural needs and aspirations through a jointly-owned and democratically- controlled enterprise.<br/><br />
-
-            <h3>Values</h3>Co-operatives are based on the values of self-help, self- responsibility, democracy, equality, equity, and solidarity. In the tradition of their founders, co-operative members believe in the ethical values of honesty, openness, social responsibility, and caring for others.<br/><br />
-
-            <h3>Principles</h3> The co-operative principles are guidelines by which co-operatives put their values into practice.
-          </p>
-            <br/><br />
-
-          <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <h5 style="font-weight: lighter">First Principle: <b>Voluntary and Open Membership</b></h5>
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  Co-operatives are voluntary organizations, open to all persons able to use their services and willing to accept the responsibilities of membership, without gender, social, racial, political, or religious discrimination.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                     <h5 style="font-weight: lighter">Second Principle: <b>Democratic Member Control</b></h5>
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                 Co-operatives are democratic organizations controlled by their members, who actively participate in setting their policies and making decisions. Men and women serving as elected representatives are accountable to the membership. In primary co-operatives members have equal voting rights (one member, one vote) and co-operatives at other levels are organized in a democratic manner.
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                     <h5 style="font-weight: lighter">Third Principle: <b>Member Economic Participation</b></h5>
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  Members contribute equitably to, and democratically control, the capital of their co-operative. At least part of that capital is usually the common property of the co-operative. They usually receive limited compensation, if any, on capital subscribed as a condition of membership. Members allocate surpluses for any or all of the following purposes: developing the co-operative, possibly by setting up reserves, part of which at least would be indivisible; benefiting members in proportion to their transactions with the co-operative; and supporting other activities approved by the membership.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                     <h5 style="font-weight: lighter">Fourth Principle: <b>Autonomy and Independence</b></h5>
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  Co-operatives are autonomous, self-help organizations controlled by their members. If they enter into agreements with other organizations, including governments, or raise capital from external sources, they do so on terms that ensure democratic control by their members and maintain their co-operative autonomy.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-                     <h5 style="font-weight: lighter">Fifth Principle: <b>Education, Training, and Information</b></h5>
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                 Co-operatives provide education and training for their members, elected representatives, managers, and employees so they can contribute effectively to the development of their co-operatives. They inform the general public -- particularly young people and opinion leaders -- about the nature and benefits of co-operation.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
-                     <h5 style="font-weight: lighter">Sixth Principle: <b>Cooperation Among Co-operatives</b></h5>
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                 Co-operatives serve their members most effectively and strengthen the co-operative movement by working together through local, national, regional, and international structures.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
-                     <h5 style="font-weight: lighter">Seventh Principle: <b>Concern for Community</b></h5>
-                  </button>
-                </h5>
-              </div>
-              <div id="collapseSeven" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  While focusing on member needs, co-operatives work for the sustainable development of their communities through policies accepted by their members.
-                </div>
-              </div>
-              </div>
-            </div>
-            </div>
-
-          </div>
-        </div>
-
-    </section>
-
-    <section id="join">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Join</h2>
-            <hr>
-            <p class="lead">
-              Membership to reside in Von Cramm is open to all full-time Cornell students, including undergraduate, graduate, international and transfer students.
-              <b>Von Cramm welcomes and strives to provide safe spaces for people of color, queer
-              individuals, students with physical or mental disabilities, students with financial
-              burdens, and students with other marginalized identities.</b>
-              <br/><br/>
-
-              Our house consists of 19 singles, 6 doubles and 1 triple.
-              <h4>Semesterly Housing Rates</h4><ul>
-              <li><b>Single:</b> $2400 (~$600/month)</li>
-              <li><b>Double:</b> $2100 (~$525/month)</li>
-              <li><b>Triple:</b>$1800 (~$450/month)</li></ul><br/><br/>
-
-
-              <h4 id="mosey"><b>Mosey Events (Fall 2019)</b></h4>
-              <b>Open House</b>
-              <ul>
-                <li>Sunday, November 10</li>
-                <li>1:00 PM - 5:00 PM</li>
-              </ul>
-              <b>Shower Concert</b>
-              <ul>
-                <li>Tuesday, November 12</li>
-                <li>8:00 PM - 10:00 PM</li>
-              </ul>
-              <b>Fireside Chats</b>
-              <ul>
-                <li>Friday, November 15</li>
-                <li>8:00 PM - 10:00 PM</li>
-              </ul>
-              <b>Chopped</b>
-              <ul>
-                <li>Sunday, November 17</li>
-                <li>11:00 AM - 1:00 PM</li>
-              </ul>
-              <b>Spuds & Suds</b>
-              <ul>
-                <li>Monday, November 18</li>
-                <li>8:00 PM - 10:00 PM</li>
-              </ul>
-              <b>Fermentation Station</b>
-              <ul>
-                <li>Saturday, November 23, 2019</li>
-                <li>11:00 AM - 1:00 PM</li>
-              </ul>
-
-              <br/><br/>
-
-              <h4>Selection</h4>
-              Admission to reside in Von Cramm for the following academic year is done via random selection. In order to enter the selection system for a room in VonCramm, all prospective Crammies must submit a questionnaire or have an oral interview with the current president and go through Mosey. Mosey consists of at least:<ul>
-              <li>Attending Open House</li>
-              <li>Attending two of the scheduled Mosey events (or possibly arranging their own house tour)</li>
-              <li>Helping prepare one house dinner at Von Cramm</li></ul><br/><br/>
-
-              <h4>Meal Plan</h4>
-                The Von Cramm meal plan is an in house, which means that all of the meal plan is managed and prepared by members of the meal plan. All house members are required to be a part of the meal plan, but the meal plan is open to members of the Cornell community. Those in the house are required to cook on the meal plan unless otherwise stated in the constitution. Members of the meal plan outside the house have the option of cooking or paying an additional fee to not cook on the meal plan. <br/>
-              </br>
-                <h5>Semesterly Meal Plan Rate</h5>
-                <li><b>Cooking:</b> $510 </li>
-                <li><b>Not Cooking:</b> $510 + Additional fee* </li>
-                <span>*Additional fee ≈ equal to minimum wage x 3.5 hours/week x the number of weeks of the semester’s meal plan</span>
-                <b>Learn more about the Meal Plan from our constitution:</b>
-                <a href="https://github.com/Voncramm/VC-Constitution/wiki/IV.-Meal-Plan"> Meal Plan </a> <br/><br/>
-
-              <br/><br/>
-              <h4> Learn more about Von Cramm through our constitution: </h4>
-              <h5><a href="https://github.com/Von-Cramm/VC-Constitution/wiki">Von Cramm Constitution</a></h5>
-              <br/>
-
-              <h5>Download/Print the constitution <a href="constitution/vc_constitution.pdf" download>here</a></h5>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    
     <!-- Save Plate -->
     <section id="saveplate">
       <div class="container">
@@ -313,27 +104,11 @@
           <div class="col-lg-8 mx-auto">
             <h2>Save Plate</h2>
             <hr>
-            <p>To sign up for a save plate, write your name down in the day you need one for and bold it if its permanent. MAKE SURE that you write vegetarian (V) or lactose intolerant (L).<br /> <br />
+            <p>To sign up for a save plate, write your name down in the day you need one for and bold it if it's permanent. MAKE SURE that you write vegetarian (V) or lactose intolerant (L).<br/> <br/>
                Cook group, write the time down that you check save plates.</p>
       <!-- New Save Plate spreadsheet with Google Apps Script Updater -->
       <iframe frameborder="0" height="965" scrolling="no" src="https://docs.google.com/spreadsheets/d/1JGfZsV5tGppMJ8PVnVMhH0VCfU3FSDT0ydTU4UbqO-Y/edit?usp=sharing" style=" border-width:0 " width="800"></iframe>
         Save Plate: <a href="https://docs.google.com/spreadsheets/d/1JGfZsV5tGppMJ8PVnVMhH0VCfU3FSDT0ydTU4UbqO-Y/edit?usp=sharing">Link</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Save Plate -->
-    <section id="feedback-form">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Anonymous Officer Feedback</h2>
-            <hr>
-            <p>If you would like to provide anonymous feedback to any of the officers, please fill out the form below.</p>
-            <p>Anonymous Officer Feedback Form: <a href="https://forms.gle/RZyxtjqJWHnuoBUFA">Link</a></p>
-
-            <iframe frameborder="0" height="965" scrolling="no" src="https://forms.gle/RZyxtjqJWHnuoBUFA" style=" border-width:0 " width="800"></iframe>
           </div>
         </div>
       </div>
@@ -376,7 +151,9 @@
                             </div>
                         </div>
                         <!--Grid column-->
-
+                      </div>
+                    <br>
+                      <div class="row">
                         <!--Grid column-->
                         <div class="col-md-6">
                             <div class="md-form mb-0">
@@ -422,9 +199,9 @@
                         </div>
                     </div>
                     <!--Grid row-->
-                  <br>
+                  <br/><br/>
                   <div class="text-center text-md-left">
-                    <input type = "submit" value = "send">
+                    <input type = "submit" value = "send" style="float:right;">
                   </div>
                 </form>
                 <div class="status" id="status"></div>
@@ -527,6 +304,10 @@
           });
       }
 
+      $('a.anchor').click(function() {
+        var url = $(this).attr('href').text();
+        window.location.href = url;
+      });
 
 </script>
 

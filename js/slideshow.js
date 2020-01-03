@@ -20,7 +20,7 @@ $(document).ready(function() {
   $("#ssback").click(function() {
     currindex -= 1;
 
-    if(currindex <= 0) {
+    if(currindex < 0) {
       currindex = 4;
     } 
     $("#slideshowimg").attr("src", images[currindex]);

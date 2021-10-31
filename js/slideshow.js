@@ -1,7 +1,7 @@
 $(document).ready(function() {
   var images = [
     "images/voncramm31.jpg", 
-    "images/vc22.jpg",
+    "images/vcfront.jpg",
     "images/vc1.jpg",
     "images/vc4.jpg", 
     "images/vc5.jpg"

@@ -2,7 +2,7 @@ $(document).ready(function() {
   var images = [
     "images/voncramm31.jpg", 
     "images/vcfront.jpg",
-    "images/vcsecond.JPG",
+    "images/vcsecond.jpg",
     "images/vcthird.jpg", 
     "images/vc5.jpg"
   ];

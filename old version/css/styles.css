@@ -1,0 +1,153 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+body {
+  background-color: rgb(255, 247, 253);
+}
+
+header {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.gallery-title {
+    margin-top: 50px;
+    padding-bottom: 0px;
+}
+
+#join {
+  padding-top: 0px;
+  background-color: rgb(255, 247, 253);
+}
+
+#feedback-form {
+  padding-top: 0px;
+  background-color: rgb(240, 255, 255);
+}
+
+#body-container {
+  padding-top: 40px;
+  background-color: rgb(240, 255, 255);
+}
+
+#body-container2{
+  padding-top: 40px;
+  background-color: rgb(244, 255, 242);
+}
+
+ #gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(244, 255, 242);
+  }
+
+  .column {
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 5px;
+    margin: 0;
+  }
+  
+  .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .column img:hover {
+      opacity: 0.8;
+  }
+
+  img {
+    image-orientation: from-image;
+  }
+
+  section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+  
+  #principles {
+    background-color: rgb(239, 254, 254);
+  }
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 849px) {
+  section {
+    padding: 20px 0;
+  }
+
+  a:link {
+    color: red;
+  }
+
+  a:visited {
+    color:green;
+  }
+
+  .nav-item {
+    margin-right: 20px;
+  }
+
+  .lead {
+    margin-top: 20px;
+  }
+
+  /* accordian */
+  .mb-0 h5 {
+    font-size: 14px;
+  }
+
+  /* slideshow */
+  .slideshowholder img {
+    border: 15px black solid;
+  }
+  .ssbuttonholder {
+    position: relative;
+  }
+  .slideshownext {
+    text-align: center;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .slideshowback {
+    cursor: pointer;
+  }
+
+  #ssnext {
+    margin-right: 0px;
+  }
+
+  /* Save Plate */
+  iframe {
+    width: 400px;
+  }
+
+  /* form validation */
+
+  .hidden {
+    display: none !important;
+  }
+
+  .errorContainer {
+    color: #800000;
+  }
+}
